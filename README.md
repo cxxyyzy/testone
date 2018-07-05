@@ -1,4 +1,1 @@
-# this is begining
-hello world !
-
-SSSSSCXXY
+# This is test, and we will check it.
