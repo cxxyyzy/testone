@@ -1,8 +1,15 @@
-pragma solidity ^0.4.23
+pragma solidity^0.4.23;
+contract InfoContract {
 
-contract InfoContract{
-    string fName;
-    int fAge;
+   string fName;
+   uint fAge;
 
-    function set()
+   function set(string name, uint age) public {
+       fName = name;
+       fAge = age;
+   }
+
+   function get() public constant returns (string, uint) {
+       return (fName, fAge);
+   }
 }
