@@ -1,5 +1,5 @@
-var Migrations = artifacts.require("./InfoContract.sol");
+var InfoContract = artifacts.require("./InfoContract.sol");
 
-module.exports = function(deployer){
+module.exports = function(deployer) {
   deployer.deploy(InfoContract);
 };
