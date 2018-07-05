@@ -54,6 +54,25 @@
          ]);
          var info = InfoContract.at('0x7e04ed386d1968c55ddb14e9cddbf15b665d93d29fdc9d5008b7f8103295aa59');
  }
+ <script>
+
+        // Previous code removed for brevity
+
+        Coursetro.getInstructor(function(error, result){
+            if(!error)
+                {
+                    $("#instructor").html(result[0]+' ('+result[1]+' years old)');
+                    console.log(result);
+                }
+            else
+                console.error(error);
+        });
+
+        $("#button").click(function() {
+            Coursetro.setInstructor($("#name").val(), $("#age").val());
+        });
+
+    </script>
 </script>
     </script>
 
