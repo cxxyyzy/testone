@@ -33,9 +33,10 @@
 
     <script>
     <script>
- if (typeof web3 !== 'undefined') {
+     if (typeof web3 !== 'undefined') {
      web3 = new Web3(web3.currentProvider);
- } else {
+ }
+ else {
 
      web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
      web3.eth.defaultAccount = web3.eth.accounts[0];
@@ -52,9 +53,9 @@
              "type": "uint256"
            }
          ]);
-         var info = InfoContract.at('0x7e04ed386d1968c55ddb14e9cddbf15b665d93d29fdc9d5008b7f8103295aa59');
+         var info = InfoContract.at('0x3ab3fdde414eec798b33d52833e3ff2249642e01');
  }
- <script>
+    <script>
 
         // Previous code removed for brevity
 
@@ -73,7 +74,7 @@
         });
 
     </script>
-</script>
+    </script>
     </script>
 
 </body>
